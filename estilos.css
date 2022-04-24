@@ -435,8 +435,12 @@ footer{
 
 /*PRODUCTOS*/
 
+.contenedorProductos{
+    background-image: linear-gradient(rgb(210, 210, 210),rgb(237, 237, 237) 15%, white 80%);
+}
 
 .gridProductos{
+    background-image: linear-gradient(rgb(210, 210, 210),rgb(237, 237, 237) 15%, white 80%);
     width: 90%;
     margin: auto;
     display: grid;
@@ -450,6 +454,11 @@ footer{
     background-color: rgb(250, 250, 250);
     border: 2px solid black;
     box-shadow: 0 0 5px #333 ;
+    transition: .4s;
+}
+
+.productosImg:hover{
+    transform: scale(1.03);
     transition: .4s;
 }
 
@@ -682,6 +691,7 @@ footer{
 /*CONTACTO*/
 
 .containerContacto{
+    background-image: linear-gradient(rgb(210, 210, 210),rgb(237, 237, 237) 15%, white 80%);
     display: grid;
     grid-template-columns: 5% 45% 45% 5%;
     width: 100%;
@@ -696,6 +706,19 @@ footer{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 40px;
+    animation-duration: 5s;
+    animation-name: aparición;
+    animation-delay: initial;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparición{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .containerFormulario{

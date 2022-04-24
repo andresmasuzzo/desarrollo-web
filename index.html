@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina principal</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <script src="https://kit.fontawesome.com/487a1d01f0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -50,14 +52,14 @@
     </div>
 
     <!--Acá van las 2 imágenes de venta mayorista y minorista-->
-    <article class="contenedorMinorista">
+    <article class="wow animate__animated animate__fadeInLeft contenedorMinorista">
         <img src="../imagenes/indexizq.jpg" alt="pollo venta minorista">
         <div class="recuadroMinorista">
             <h2>VENTA MINORISTA</h2>
             <p>Llevamos nuestros productos hasta la puerta de tu casa asegurando calidad y frescura. Contactate con nosotros para comprar pollo y productos elaborados de primera calidad. ¡Llegamos a todo Chubut!</p>
         </div>
     </article>
-    <article class="contenedorMayorista">
+    <article class="wow animate__animated animate__fadeInLeft contenedorMayorista">
         <img src="../imagenes/indexder.jpg" alt="pollo venta mayorista">
         <div class="recuadroMinorista">
             <h2>VENTA MAYORISTA</h2>
@@ -87,6 +89,10 @@
     </div>
 </footer>
 
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 </html>
